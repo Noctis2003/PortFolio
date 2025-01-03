@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 const handler = async (text: string) => {
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
-    port: 587,
+    port: 465,
     secure: false,
     auth: {
       user: process.env.USER,
@@ -20,7 +20,7 @@ const handler = async (text: string) => {
   try {
     // Wrap the sendMail function in a promise
     await new Promise((resolve, reject) => {
-      transporter.sendMail(
+         transporter.sendMail(
         {
           from: 'Your Portfolio',
           to,

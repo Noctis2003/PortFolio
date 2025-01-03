@@ -25,7 +25,7 @@ export default function Home() {
         </div>
 
         <div className="mt-1  p-3 flex justify-evenly w-full ">
-          
+          <GitButton></GitButton>
           <LinkedinButton></LinkedinButton>
          
         </div>
