@@ -14,13 +14,12 @@ function Form() {
         setPlaceholder("Sending...");
         setvalue("");
         await sendMail(formData);
-        
+        setPlaceholder("Message sent... Send new message");  
     } catch (error) {
+      setPlaceholder("Error sending message");
         console.log(error);
     }
-    finally{
-        setPlaceholder("Message sent... Send new message");
-    }
+  
       };
 
   return (
