@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import Typewriter from "@/effects/page";
-import MailButton from "@/buttons/mailButton";
+
 import GitButton from "@/buttons/GitButton";
 import LinkedinButton from "@/buttons/LinkedinButton";
 import Form from "./form";
@@ -20,10 +20,8 @@ export default function Home() {
           className="rounded-xl"
         />
         <div className="flex flex-row justify-around mt-6  w-full ">
-          <MailButton></MailButton>
-          <button className="flex items-center px-2 py-2 bg-black text-white rounded-md hover:bg-slate-800 transition text-l">
-            Get CV
-          </button>
+         
+          
         </div>
 
         <div className="mt-1  p-3 flex justify-evenly w-full ">

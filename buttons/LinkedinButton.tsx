@@ -11,7 +11,7 @@ function LinkedinButton() {
   return (
  <button 
        onClick={handleClick} // Add the onClick event handler
-       className="px-2 font-bold  py-2 border-red-30 text-black gap-2 rounded-md flex flex-row justify-evenly items-center  ">
+       className="px-2 font-bold bg-black py-2 border-red-30 text-white gap-2 rounded-md flex flex-row justify-evenly items-center  ">
        <FontAwesomeIcon icon={faLinkedin} className="mx-5 size-7" />
        
        Linkedin

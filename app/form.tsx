@@ -5,15 +5,27 @@ import sendMail from "./actions";
 
 function Form() {
   const [value, setvalue] = useState("");
-
-  const handleClick = () => {
-    setvalue("");
-  };
+ const [placeholder, setPlaceholder] = useState("Message me...");
+  const handleClick = async (e:React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    try {
+        const formData = new FormData(e.currentTarget);
+        setPlaceholder("Sending...");
+        setvalue("");
+        await sendMail(formData);
+        
+    } catch (error) {
+        console.log(error);
+    }
+    finally{
+        setPlaceholder("Message sent... Send new message");
+    }
+      };
 
   return (
     <form
       className="flex flex-row  p-4 rounded-lg"
-      action={sendMail}
       method="POST"
       onSubmit={handleClick}
     >
@@ -21,7 +33,7 @@ function Form() {
         name="text"
         className="w-full border-[2px] border-gray-300 rounded-lg px-4 py-2"
         value={value}
-        placeholder="Message me..."
+        placeholder={placeholder}
         onChange={(e) => setvalue(e.target.value)}
         type="text"
         required
