@@ -9,13 +9,27 @@ function LinkedinButton() {
   };
 
   return (
- <button 
-       onClick={handleClick} // Add the onClick event handler
-       className="px-2 font-bold bg-black py-2 border-red-30 text-white gap-2 rounded-md flex flex-row justify-evenly items-center  ">
-       <FontAwesomeIcon icon={faLinkedin} className="mx-5 size-7" />
+    <button 
+      onClick={handleClick}
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        padding: '8px 16px',
+        backgroundColor: '#0072b1',
+        color: 'white',
        
-       Linkedin
-     </button>
+        borderRadius: '8px',
+        gap: '8px',
+        fontWeight: 'bold',
+        justifyContent: 'space-evenly',
+        transition: 'background-color 0.3s',
+      }}
+  
+      
+    >
+      <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '18px' }} />
+      Linkedin
+    </button>
   );
 }
 

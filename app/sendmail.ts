@@ -1,6 +1,6 @@
 
 
-import nodemailer from 'nodemailer';
+const nodemailer = require('nodemailer');
 const handler = async (text:string) => {
 
 
