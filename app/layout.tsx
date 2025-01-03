@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased h-screen w-full overflow-hidden`}
+        className={`${inter.className} antialiased h-screen w-full `}
       >
         <div className="mx-auto w-3/4 mt-12  flex flex-row" >
         {children}

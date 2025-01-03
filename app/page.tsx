@@ -4,6 +4,7 @@ import Typewriter from "@/effects/page";
 import MailButton from "@/buttons/mailButton";
 import GitButton from "@/buttons/GitButton";
 import LinkedinButton from "@/buttons/LinkedinButton";
+import Form from "./form";
 
 export default function Home() {
   return (
@@ -103,6 +104,7 @@ export default function Home() {
         ●Created an anonymous app that allows user to recieve anonymous feedback
         from the their users
         </div>
+        <Form></Form>
       </div>
     </>
   );
