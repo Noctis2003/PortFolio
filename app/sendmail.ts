@@ -9,6 +9,9 @@ const handler = async (text: string) => {
       user: process.env.USER,
       pass: process.env.PASS,
     },
+    tls: {
+      rejectUnauthorized: false,
+    }
   });
 
   const to = "singhmanjot9922@gmail.com";
