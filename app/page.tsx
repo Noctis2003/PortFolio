@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
      
-      <div className="min-h-56 rounded-xl w-96  mx-1 my-2 flex flex-col items-center justify-start ">
+      <div className="min-h-56 rounded-xl w-96  mx-1 my-2 flex flex-col items-center justify-startmax-md:mt-auto max-md:w-full">
         <Image
           alt="There should be an image of me"
           src="/pic.png"
@@ -16,10 +16,7 @@ export default function Home() {
           quality={100}
           className="rounded-xl "
         />
-        <div className="flex flex-row justify-around mt-6  w-full ">
-         
-          
-        </div>
+    
 
         <div className="mt-1  p-3 flex justify-evenly w-full ">
           <GitButton></GitButton>
@@ -27,30 +24,35 @@ export default function Home() {
          
         </div>
       </div>
-      <div className=" flex flex-col w-full flex-wrap ">
-        <h1 className="text-4xl font-extrabold mt-2 mx-3">Manjot Singh</h1>
+      <div className=" flex flex-col w-full flex-wrap  max-md:w-full ">
+        <h1 className="text-4xl font-extrabold mt-2 mx-3 text-black">Manjot Singh</h1>
         
-        <h1 className="mx-3 mt-2 text-black">
+        <div className="mx-3 mt-2 text-black">
             Developer | Freelancer | Driving innovation | Solving Challenges
-        </h1>
-        <h1 className="mx-3 mt-7">
+        </div>
+        <h1 className="mx-3 mt-7 max-md:w-full text-black">
           Bachelors Degree @{" "}
           <span className="font-bold text-xl">NIT Jalandhar</span>
         </h1>
-        <h1 className="mx-3 font-bold text-2xl mt-7">
+        <h1 className="mx-3 font-bold text-2xl mt-7  ">
+          <div className="max-md:w-full max-md:flex max-md:flex-row max-md:gap-7 text-black ">
           Top Skills
-          <span className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300 mx-6">
-            Fullstack
+          </div>
+          <div className=" max-md:w-full max-md:flex max-md:flex-col max-md:gap-4 max-md:mt-4">
+         
+          <span className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-800 dark:text-gray-300 text-center">
+            Automation and scripting
           </span>
-          <span className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
-            Automation and Scripting
+             <span className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-800 dark:text-gray-300 text-center">
+            Full Stack Development
           </span>
-          <span className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
-            Machine Learning
+          <span className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-800 dark:text-gray-300 text-center">
+            Fine Tuning and Optimization
           </span>
+          </div>
         </h1>
-        <div className=" flex flex-row flex-wrap">
-          <div className="flex flex-col  w-56 rounded-lg mx-3 mt-5  gap-2 justify-evenly">
+        <div className=" flex flex-row flex-wrap text-black">
+          <div className="flex flex-col  w-56 rounded-lg mx-3 mt-5  gap-2 justify-evenly text-black">
             <h1 className="font-bold">Platforms</h1>
             <div className="text-sm text-slate-700 ">
               ●Linux ●Windows ●MacOS ●Docker ●kubernetes
@@ -84,7 +86,7 @@ export default function Home() {
       
         </div>
        
-       <div className="mx-3 mt-3 bg-white  rounded-lg p-6 ">
+       <div className="md:mx-3 mt-3  rounded-lg p-6 max-md:w-full">
   <h1 className="font-bold text-2xl mb-4 text-gray-800">Professional Experience</h1>
   <p className="text-gray-700 mb-3">
     Developed  a <strong>full-stack MVP</strong> designed to connect college students across India. Built with <strong>NestJS</strong> on the <Link className="text-blue-400" href="https://github.com/Noctis2003/nitap">backend</Link> and <strong>Next.js</strong> on the <Link className="text-blue-400" href="https://github.com/Noctis2003/nitapp">frontend</Link>, it enables students to collaborate on gigs, buy/sell items locally, and post thoughts or anonymous confessions—fostering both local and national student communities.

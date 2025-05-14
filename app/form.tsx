@@ -28,14 +28,14 @@ function Form() {
 
   return (
     <form
-      className={`${poppins.className} flex flex-row  p-4 rounded-lg`}
+      className={`${poppins.className} flex flex-row  p-4 rounded-lg w-4/5 ml-4 max-md:w-full`}
       method="POST"
       onSubmit={handleClick}
     
     >
       <input
         name="text"
-        className="w-full border-[2px] border-gray-300 rounded-lg px-4 py-2"
+        className="w-full border-[2px] border-gray-300 rounded-lg px-4 py-2 text-black"
         value={value}
         placeholder={placeholder}
         onChange={(e) => setvalue(e.target.value)}
