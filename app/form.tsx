@@ -2,7 +2,11 @@
 
 import { useState } from "react";
 import sendMail from "./actions";
-
+import { Poppins } from "next/font/google";
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 function Form() {
   const [value, setvalue] = useState("");
  const [placeholder, setPlaceholder] = useState("Message me...");
@@ -24,9 +28,10 @@ function Form() {
 
   return (
     <form
-      className="flex flex-row  p-4 rounded-lg"
+      className={`${poppins.className} flex flex-row  p-4 rounded-lg`}
       method="POST"
       onSubmit={handleClick}
+    
     >
       <input
         name="text"
@@ -38,7 +43,7 @@ function Form() {
         required
       />
       <button
-        className="ml-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+        className="ml-4 bg-blue-500 text-white px-3 py-1 rounded-lg hover:bg-blue-600 font-semibold text-lg"
         type="submit"
       >
         Send

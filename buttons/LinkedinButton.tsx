@@ -11,6 +11,7 @@ function LinkedinButton() {
   return (
     <button 
       onClick={handleClick}
+      
       style={{
         display: 'flex',
         alignItems: 'center',
@@ -23,6 +24,8 @@ function LinkedinButton() {
         fontWeight: 'bold',
         justifyContent: 'space-evenly',
         transition: 'background-color 0.3s',
+   
+        
       }}
   
       

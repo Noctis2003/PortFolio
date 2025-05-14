@@ -20,9 +20,9 @@ function GitButton() {
         borderRadius: '8px',
         gap: '8px',
         transition: 'background-color 0.3s',
+        fontWeight: 'bold',
       }}
-      onMouseOver={(e) => e.currentTarget.style.backgroundColor = 'slategray'}
-      onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'black'}
+      
     >
       <FontAwesomeIcon icon={faGithub} style={{ fontSize: '20px' }} />
       Github

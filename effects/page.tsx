@@ -23,7 +23,7 @@ const Typewriter: React.FC<TypewriterProps> = ({ text, speed = 100 }) => {
     return () => clearInterval(interval); // Cleanup interval on unmount
   }, [text, speed]);
 
-  return <span>{displayedText}</span>;
+  return <span className='text-slate-300' >{displayedText}</span>;
 };
 
 export default Typewriter;
