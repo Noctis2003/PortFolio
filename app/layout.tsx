@@ -6,7 +6,23 @@ import { inter } from "@/fonts/pages";
 import { Poppins } from "next/font/google";
 export const metadata: Metadata = {
   title: "Manjot Singh",
-  description: "PortFolio",
+  description: "Manjot is a developer specializing in optimzation and finetuning llms and fullstack development along with automation and scripting",
+  openGraph: {
+    title: "Manjot Singh",
+    description: "Manjot is a developer specializing in optimzation and finetuning llms and fullstack development along with automation and scripting",
+    url: "https://manjot.site",
+  
+    siteName: "Manjot Singh",
+    images: [
+      {
+        url: "https://manjot.site/pic.png",
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
  
 };
 
