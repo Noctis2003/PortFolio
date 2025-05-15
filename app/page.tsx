@@ -25,7 +25,7 @@ export default function Home() {
 
       <main className=" flex flex-col w-full flex-wrap  max-md:w-full ">
         <header>
-          <h1 className="text-4xl font-extrabold mt-2 mx-3 text-black">Manjot </h1>
+          <h1 className="text-4xl font-extrabold mt-2 mx-3 text-black">Manjot Singh</h1>
           <p className="mx-3 mt-2 text-black">
             Developer | Freelancer | Driving innovation | Solving Challenges
           </p>
@@ -94,7 +94,7 @@ export default function Home() {
             The app uses <strong>OAuth 2.0</strong> for secure authentication and leverages <strong>SSR</strong> (Server-Side Rendering) and <strong>ISR</strong> (Incremental Static Regeneration) for fast, SEO-friendly performance. <strong>Cloudinary</strong> is integrated for media uploads and optimization, ensuring efficient delivery of user-generated content.
           </p>
           <p className="text-gray-700">
-            Users can collaborate on academic or creative projects, Post their thoughts, and participate in a local marketplace—all within a responsive, user-focused interface. The app combines real-time features with scalable architecture, providing a strong foundation for future enhancements like chat, gamification, and content moderation.
+            Users can <strong>collaborate</strong> on academic or creative projects, <strong>Post</strong> their thoughts, and participate in a local <strong>marketplace</strong>-all within a responsive, user-focused interface. The app combines real-time features with scalable architecture, providing a strong foundation for future enhancements like chat, gamification, and content moderation.
           </p>
         </section>
 
