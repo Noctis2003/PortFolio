@@ -25,7 +25,7 @@ export default function Home() {
 
       <main className=" flex flex-col w-full flex-wrap  max-md:w-full ">
         <header>
-          <h1 className="text-4xl font-extrabold mt-2 mx-3 text-black">Manjot Singh</h1>
+          <h1 className="text-4xl font-extrabold mt-2 mx-3 text-black">Manjot </h1>
           <p className="mx-3 mt-2 text-black">
             Developer | Freelancer | Driving innovation | Solving Challenges
           </p>
