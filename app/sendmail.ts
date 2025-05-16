@@ -27,7 +27,7 @@ const handler = async (text: string) => {
     
   } catch (error) {
     console.error("Email sending failed:", error);
-    return { success: false, error: error.message };
+    return { success: false, error };
   }
 };
 
