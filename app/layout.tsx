@@ -46,9 +46,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} antialiased h-screen w-screen  relative bg-white overflow-x-hidden`}
+        className={`${poppins.className} antialiased h-screen w-full relative overflow -x-hidden bg-slate-200`}
       >
-        <div className="mx-auto w-3/4 mt-12  max-md:flex-col flex flex-row" >
+        <div className="mx-auto max-md:w-full md:w-3/4 mt-12  max-md:flex-col flex flex-row overflow-x-hidden" >
         {children}
         </div>
       </body>
