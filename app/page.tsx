@@ -37,7 +37,7 @@ export default function Home() {
           <h1 className="text-5xl max-md:mx-auto max-md:text-center font-black mt-2 min-md:mx-auto  min-md:mx-3 text-black ">
             Manjot Singh
           </h1>
-          <p className="max-md:mx-auto max-md:w-4/5 mt-3 text-slate-600 text-lg font-medium">
+          <p className="max-md:mx-auto max-md:w-4/5 mt-3 text-slate-600 text-lg font-medium  max-md:flex max-md:items-center max-md:justify-center max-md:text-center">
             Developer • Freelancer • Driving Innovation • Solving Challenges
           </p>
         </header>
