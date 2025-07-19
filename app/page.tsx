@@ -13,7 +13,7 @@ export default function Home() {
   const [isMiscProjectExpanded, setIsMiscProjectExpanded] = useState(false);
   return (
     <>
-      <aside className="  rounded-2xl w-96 mx-1 my-2 flex flex-col items-center justify-start max-md:mt-auto max-md:w-full">
+      <aside className=" rounded-2xl w-96 mx-1 my-2 flex flex-col items-center justify-start max-md:mt-auto max-md:w-full">
         <div className="relative">
           <Image
             alt="There should be an image of me"
@@ -34,7 +34,7 @@ export default function Home() {
 
       <main className="flex flex-col w-full flex-wrap max-md:w-full overflow-y-visible overflow-x-hidden">
         <header className="mb-8">
-          <h1 className="text-5xl font-black mt-2 min-md:mx-auto max-md:mx-7 min-md:mx-3 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700 bg-clip-text ">
+          <h1 className="text-5xl font-black mt-2 min-md:mx-auto max-md:mx-7 min-md:mx-3 text-black ">
             Manjot Singh
           </h1>
           <p className="max-md:mx-auto max-md:w-4/5 mt-3 text-slate-600 text-lg font-medium">
