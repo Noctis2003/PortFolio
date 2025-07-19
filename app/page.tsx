@@ -34,7 +34,7 @@ export default function Home() {
 
       <main className="flex flex-col w-full flex-wrap max-md:w-full overflow-y-visible overflow-x-hidden">
         <header className="mb-8">
-          <h1 className="text-5xl font-black mt-2 min-md:mx-auto max-md:mx-7 min-md:mx-3 text-black ">
+          <h1 className="text-5xl max-md:mx-auto max-md:text-center font-black mt-2 min-md:mx-auto  min-md:mx-3 text-black ">
             Manjot Singh
           </h1>
           <p className="max-md:mx-auto max-md:w-4/5 mt-3 text-slate-600 text-lg font-medium">
